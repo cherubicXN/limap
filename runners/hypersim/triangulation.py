@@ -1,6 +1,6 @@
 import os, sys
 import numpy as np
-
+import _limap # to avoid the error "GLIBCXX_3.4.30 not found"
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from Hypersim import Hypersim
 from loader import read_scene_hypersim
